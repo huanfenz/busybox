@@ -161,7 +161,7 @@ export srctree objtree VPATH TOPDIR
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 
-CROSS_COMPILE ?= /usr/bin/arm-linux-gnueabihf-
+CROSS_COMPILE ?= /usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 # bbox: we may have CONFIG_CROSS_COMPILER_PREFIX in .config,
 # and it has not been included yet... thus using an awkward syntax.
 ifeq ($(CROSS_COMPILE),)
